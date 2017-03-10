@@ -1,0 +1,19 @@
+module modulo(
+input logic clk,
+input logic rst,
+input logic [2:0]slot,
+output logic pulso
+);
+
+logic [4:0]contador
+
+always_ff @(posedge clk or negedge rst) begin
+	if(rst == 0)
+		contador <= 0;
+	else if(slot == contador[4:2])
+		pulso = clk;
+	contador <= contador + 1;
+end
+
+
+endmodule

@@ -1,0 +1,275 @@
+# do modulo_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /opt/altera13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+/home/marcelloa/Documents/aulaantonio2/modulo {/home/marcelloa/Documents/aulaantonio2/modulo/MR.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MR
+# 
+# Top level modules:
+# 	MR
+# 
+vsim work.MR
+# vsim work.MR 
+# Loading sv_std.std
+# Loading work.MR
+add wave -position insertpoint  \
+sim:/MR/clk \
+sim:/MR/rst \
+sim:/MR/writeb \
+sim:/MR/endereco \
+sim:/MR/datain \
+sim:/MR/dataout \
+sim:/MR/rega \
+sim:/MR/regb
+force -freeze sim:/MR/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/MR/rst 0 0
+run
+force -freeze sim:/MR/endereco 120 0
+# Invalid binary digit: 2.
+# ** Error: (vsim-4011) Invalid force value: 120 0.
+# 
+force -freeze sim:/MR/endereco 120 0
+# Invalid binary digit: 2.
+# ** Error: (vsim-4011) Invalid force value: 120 0.
+# 
+run
+force -freeze sim:/MR/endereco 01111000 0
+run
+force -freeze sim:/MR/endereco 120 0
+# Invalid binary digit: 2.
+# ** Error: (vsim-4011) Invalid force value: 120 0.
+# 
+run
+run
+force -freeze sim:/MR/endereco 01111001 0
+run
+force -freeze sim:/MR/endereco 120 0
+# Invalid binary digit: 2.
+# ** Error: (vsim-4011) Invalid force value: 120 0.
+# 
+run
+force -freeze sim:/MR/endereco 'd120 0
+run
+force -freeze sim:/MR/datain 'd30 0
+force -freeze sim:/MR/writeb 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/MR/writeb 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/MR/writeb 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/MR/datain 'd12 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/MR/rst 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/MR/writeb 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/MR/endereco 'd121 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/MR/datain 'd32 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/MR/writeb 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

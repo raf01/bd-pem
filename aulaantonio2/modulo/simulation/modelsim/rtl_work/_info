@@ -1,0 +1,29 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/marcelloa/Documents/aulaantonio2/modulo/simulation/modelsim
+vMR
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 ?PE1HXQj_HdFhb8jM]J@X2
+IPP8>7zdQnc[6]o8o8lMCP1
+V18dVg058E?kmAc<L_4z1M0
+!s105 MR_sv_unit
+S1
+Z1 d/home/marcelloa/Documents/aulaantonio2/modulo/simulation/modelsim
+w1489104896
+8/home/marcelloa/Documents/aulaantonio2/modulo/MR.sv
+F/home/marcelloa/Documents/aulaantonio2/modulo/MR.sv
+L0 1
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1489104909.450815
+!s107 /home/marcelloa/Documents/aulaantonio2/modulo/MR.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/marcelloa/Documents/aulaantonio2/modulo|/home/marcelloa/Documents/aulaantonio2/modulo/MR.sv|
+!s101 -O0
+o-sv -work work -O0
+!s92 -sv -work work +incdir+/home/marcelloa/Documents/aulaantonio2/modulo -O0
+n@m@r

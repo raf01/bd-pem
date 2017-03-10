@@ -1,0 +1,13 @@
+module MR(
+input logic clk,
+input logic rst,
+input logic [7:0]endereco,
+input logic [7:0]datain,
+output logic [7:0]dataout
+);
+
+case endereco 120
+dataout <= datain
+
+
+endmodule
